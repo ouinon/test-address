@@ -35,8 +35,7 @@ angular.module('addressApp')
 
 	}
 
-	function setConcact(key,obj){
-
+	function setContact(key,obj){
 
 		var contactsIndex;
 
@@ -54,6 +53,8 @@ angular.module('addressApp')
 
 		});
 
+		console.log(contactsIndex,key,obj,"done");
+
 		if(contactsIndex){
 
 			contacts[contactsIndex] = obj;
@@ -69,7 +70,7 @@ angular.module('addressApp')
 	return {
 		getContact: getContact,
 		getConcactAll: getConcactAll,
-		setConcact: setConcact,
+		setContact: setContact,
 		createContact: createContact
 	};
 

@@ -14,7 +14,7 @@ angular.module('addressApp')
 
     var init = (function(){
 
-        $scope.contacts = contacts.data;
+        $scope.contacts = contacts.getConcactAll();
 
     })();
 

@@ -1,29 +1,31 @@
 <div class="cte WdB">
-  <div class="o-tbl SpcB">
-    <div class="tbl">
-      <div class="cll">
-        <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.name" name="firstinput"></input>
-      </div>
-    </div>
-    <div class="tbl">
-      <div class="cll">
-        <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.phone" name="firstinput"></input>
-      </div>
-    </div>
-    <div class="tbl">
-      <div class="cll">
-        <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.street_01" name="firstinput"></input>
-      </div>
-    </div>
-    <div class="tbl">
-      <div class="cll">
-        <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.street_02" name="firstinput"></input>
-      </div>
-    </div>
-    <div class="tbl">
-      <div class="cll">
-        <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.postcode" name="firstinput"></input>
-      </div>
+
+    <div class="o-tbl SpcB">
+        <div class="tbl">
+            <div class="cll">
+                <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.name" name="firstinput"></input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.phone" name="firstinput"></input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.street_01" name="firstinput"></input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.street_02" name="firstinput"></input>
+            </div>
+        </div>
+        <div class="tbl">
+            <div class="cll">
+                <input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="contact.postcode" name="firstinput"></input>
+            </div>
+        </div>
     </div>
     <!--         <input o-input placeholder="o-input.o-input > input" required ng-pattern="/^[0-9]{1,7}$/" ng-model-options="{allowInvalid:true}" ng-model="input01" name="firstinput"></input> -->
     <!-- 
@@ -31,5 +33,30 @@
       - [] Include a back button
       - [] Create and Modify Button
     -->
+
+
+    <div class="o-tbl SpcB">
+        <div class="tbl Auto flL">
+            <div class="cll">
+                <a href="#/address" class="btn Icn">
+                    <label>Back</label>
+                    <div class="icn">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="tbl Auto flR">
+            <div class="cll">
+                <button ng-click="saveContact()" class="btn Icn">
+                    <label>Save</label>
+                    <div class="icn">
+                        <i class="fa fa-arrow-up"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
   </div>
 </div>

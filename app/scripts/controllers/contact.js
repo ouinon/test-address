@@ -5,9 +5,17 @@ angular.module('addressApp')
 
     $scope.contact = false;
 
-    var init = (function(){
+    var saveContact = function(){
 
-    	var name = $routeParams.name || false;
+        var key = name;
+
+        return contactFact.setContact(key,$scope.contact);
+
+    };
+
+	var name = $routeParams.name || false;
+
+    var init = (function(){
 
     	var action = $routeParams.action;
 
@@ -26,9 +34,9 @@ angular.module('addressApp')
 
     	if(name){
 
-    		$scope.contact = contactFact.getContact(name);
-
-            console.log($scope.contact);
+            $scope.contact = contactFact.getContact(name);
+    		
+            $scope.saveContact = saveContact;          
 
     	}
 
