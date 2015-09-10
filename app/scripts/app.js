@@ -21,15 +21,7 @@ angular
         templateUrl: 'views/address.html',
         controller: 'AddressCtrl'
       })
-      .when('/address/_create', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
-      })
-      .when('/address/edit/:name', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
-      })
-      .when('/address/:name', {
+      .when('/address/:action/:name?', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })

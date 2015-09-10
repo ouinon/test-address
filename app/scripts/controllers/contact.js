@@ -1,14 +1,35 @@
 'use strict';
 
 angular.module('addressApp')
-.controller('ContactCtrl',['$scope', '$routeParams','contactsFact',function ($scope, $routeParams, contactFact) {
+.controller('ContactCtrl',['$scope','$location','$routeParams','contactsFact',function ($scope, $location, $routeParams, contactFact) {
 
-	var name = $routeParams.name || false;
+    $scope.contact = false;
 
     var init = (function(){
 
+    	var name = $routeParams.name || false;
+
+    	var action = $routeParams.action;
+
+    	var validActionsArr = ['_create','edit'];
+
+        var invalidUrl = validActionsArr.indexOf(action) === -1 || (action === 'edit' && !name);
+
+    	if(invalidUrl){
+
+            // If it isn't a valid action URL
+            // Better done with the UI-Router
+
+	    	$location.path('/address');
+
+    	}
+
     	if(name){
-    		contactFact.getContact(name);
+
+    		$scope.contact = contactFact.getContact(name);
+
+            console.log($scope.contact);
+
     	}
 
     })();

@@ -14,11 +14,8 @@ angular.module('addressApp')
 
     var init = (function(){
 
-        console.log(contacts.data);
-
         $scope.contacts = contacts.data;
 
     })();
-
 
 }]);
