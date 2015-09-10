@@ -32,10 +32,10 @@
 	<div class="box" ng-repeat="contact in contacts | namesFilter:search">
 		
 		<div class="tbl" ng-click="editContact(contact)">
-		  <div class="cll pd2r">
-		    <h2 class="h1 Line" ng-bind="contact.name"></h2>
-		    <h4 class="h1 Line" ng-bind="contact.phone"></h4>
-		  </div>
+			<div class="cll pd2r">
+				<h2 class="h1 Line" ng-bind="contact.name"></h2>
+		    	<h3><strong>Telephone:</strong><span ng-bind="contact.phone"></span></h3>
+			</div>
 		</div>
 
 	</div>
