@@ -1,8 +1,11 @@
 'use strict';
 
 angular.module('addressApp')
-.controller('AddressCtrl',['$scope','$location','contactsFact', function ($scope, $location, contacts) {
+.controller('AddressCtrl',['$scope','$location','contactsFact',function ($scope, $location, contacts) {
 
+    // $scope.namesFilter = namesFilter;
+
+    $scope.search = {};
 
     $scope.editContact = function ( contact ) {
 

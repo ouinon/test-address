@@ -1,5 +1,25 @@
-<div ng-include="'views/includes/search.html'">
-	
+<div class="cte WdB pdT5r">
+
+	<div class="cte WdB">
+
+		<div class="h1 Line">Search</div>
+
+		<div class="o-tbl SpcB">
+			<div class="tbl">
+				<div class="cll wd45p">
+					<input o-input placeholder="First Name" required ng-model-options="{allowInvalid:true}" ng-model="search.name" name="firstinput"></input>
+				</div>
+				<div class="cll wd45p">
+					<input o-input placeholder="Telephone" required ng-pattern="/^[0-9]{1,10}$/" ng-model-options="{allowInvalid:true}" ng-model="search.phone" name="firstinput"></input>
+				</div>
+				<div class="cll">
+			        <button ng-click="" class="btn" disabled>
+			          <label>Auto-find</label>
+			        </button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 
@@ -9,11 +29,12 @@
 
 	<div class="o-box SpcB Wd50 m_Wd100A">
 
-	<div class="box" ng-repeat="contact in contacts">
+	<div class="box" ng-repeat="contact in contacts | namesFilter:search">
 		
 		<div class="tbl" ng-click="editContact(contact)">
 		  <div class="cll pd2r">
 		    <h2 class="h1 Line" ng-bind="contact.name"></h2>
+		    <h4 class="h1 Line" ng-bind="contact.phone"></h4>
 		  </div>
 		</div>
 

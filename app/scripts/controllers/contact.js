@@ -13,34 +13,33 @@ angular.module('addressApp')
 
     };
 
-	var name = $routeParams.name || false;
+    var name = $routeParams.name || false;
 
     var init = (function(){
 
-    	var action = $routeParams.action;
+        var action = $routeParams.action;
 
-    	var validActionsArr = ['_create','edit'];
+        var validActionsArr = ['_create','edit'];
 
         var invalidUrl = validActionsArr.indexOf(action) === -1 || (action === 'edit' && !name);
 
-    	if(invalidUrl){
+        if(invalidUrl){
 
             // If it isn't a valid action URL
             // Better done with the UI-Router
 
-	    	$location.path('/address');
+            $location.path('/address');
 
-    	}
+        }
 
-    	if(name){
+        if(name){
 
             $scope.contact = contactFact.getContact(name);
-    		
+            
             $scope.saveContact = saveContact;          
 
-    	}
+        }
 
     })();
-
 
 }]);

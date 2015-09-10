@@ -6,11 +6,16 @@
 
 		<div class="o-tbl SpcB">
 			<div class="tbl">
-				<div class="cll">
-					<input o-input placeholder="o-input.o-input > input" required ng-pattern="/^[0-9]{1,7}$/" ng-model-options="{allowInvalid:true}" ng-model="input01" name="firstinput"></input>
+				<div class="cll wd45p">
+					<input o-input placeholder="o-input.o-input > input" required ng-model-options="{allowInvalid:true}" ng-model="search.name" name="firstinput"></input>
+				</div>
+				<div class="cll wd45p">
+					<input o-input placeholder="o-input.o-input > input" required ng-pattern="/^[0-9]{1,10}$/" ng-model-options="{allowInvalid:true}" ng-model="search.phone" name="firstinput"></input>
 				</div>
 				<div class="cll">
-					<input o-input placeholder="o-input.o-input > input" required ng-pattern="/^[0-9]{1,7}$/" ng-model-options="{allowInvalid:true}" ng-model="input01" name="firstinput"></input>
+			        <button ng-click="" class="btn">
+			          <label>Find</label>
+			        </button>
 				</div>
 			</div>
 		</div>
