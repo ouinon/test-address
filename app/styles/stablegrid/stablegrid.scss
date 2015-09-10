@@ -5,7 +5,7 @@ $c_1:#FFF3C1;
 
 $c_A:$touchnoteblue;
 
-$c_B:#005689;
+$c_B:#dcdcdc;
 $c_C:#FFAA00;
 
 $wdA:480px;
@@ -310,6 +310,12 @@ p{
     margin: 0 -1rem;
     > .box{
       padding: 0 1rem;
+    }
+  }
+  &.SpcB{
+    margin: 0 -2rem;
+    > .box{
+      padding: 0 2rem;
     }
   }
   &.Wd50 > .box{

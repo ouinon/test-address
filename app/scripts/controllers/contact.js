@@ -1,9 +1,8 @@
 'use strict';
 
 angular.module('addressApp')
-.controller('ContactCtrl',['$scope','contacts', function ($scope, contacts) {
+.controller('ContactCtrl',['$scope','contactsFact', function ($scope, contacts) {
 
-	
 
     var init = (function(){
 
